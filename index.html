@@ -30,6 +30,15 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;co
 footer{background:var(--green);color:#cfe0d2;text-align:center;padding:24px;font-size:12.5px;margin-top:10px;line-height:1.9}
 footer b{color:#fff}
 @media(max-width:720px){.grid{grid-template-columns:1fr}.hero h1{font-size:24px}}
+@media print{
+  @page{margin:12mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff}
+  .hero{padding:26px 20px}
+  .grid{margin:18px auto;gap:12px}
+  .card,.fac{break-inside:avoid}
+  a[href]{color:inherit;text-decoration:none}
+}
 </style></head><body>
 <div class="hero"><div class="wrap">
 <div class="logo"><img src="_logo.png" alt="瑞禾開發"><div><b>瑞禾開發 ｜ 工業地產</b><span>RUEI.HE INDUSTRIAL</span></div></div>
